@@ -36,7 +36,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`https://write-out.herokuapp.com/posts/${post._id}`, {
+      await axios.put(`/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
